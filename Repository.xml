@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Repository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Questions>
+    <Question>
+      <QuestionText>What is the color of the sky?</QuestionText>
+      <Answers>
+        <string>Red</string>
+        <string>Blue</string>
+        <string>Purple</string>
+      </Answers>
+      <CorrectAnswerIndex>1</CorrectAnswerIndex>
+    </Question>
+    <Question>
+      <QuestionText>How many wheels does a car have?</QuestionText>
+      <Answers>
+        <string>4</string>
+        <string>5</string>
+        <string>6</string>
+      </Answers>
+      <CorrectAnswerIndex>0</CorrectAnswerIndex>
+    </Question>
+  </Questions>
+</Repository>
