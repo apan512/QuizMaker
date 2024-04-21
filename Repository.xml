@@ -2,22 +2,31 @@
 <Repository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Questions>
     <Question>
-      <QuestionText>What is the color of the sky?</QuestionText>
+      <QuestionText>What is the purpose of meditation?</QuestionText>
       <Answers>
-        <string>Red</string>
-        <string>Blue</string>
-        <string>Purple</string>
+        <string>Fun</string>
+        <string>Chill</string>
+        <string>Enlightenment</string>
       </Answers>
-      <CorrectAnswerIndex>1</CorrectAnswerIndex>
+      <CorrectAnswerIndex>2</CorrectAnswerIndex>
     </Question>
     <Question>
-      <QuestionText>How many wheels does a car have?</QuestionText>
+      <QuestionText>What is the color of sky?</QuestionText>
       <Answers>
-        <string>4</string>
-        <string>5</string>
-        <string>6</string>
+        <string>Blue</string>
+        <string>Purple</string>
+        <string>Orange</string>
       </Answers>
       <CorrectAnswerIndex>0</CorrectAnswerIndex>
+    </Question>
+    <Question>
+      <QuestionText>How many days are in a week?</QuestionText>
+      <Answers>
+        <string>2</string>
+        <string>7</string>
+        <string>3</string>
+      </Answers>
+      <CorrectAnswerIndex>1</CorrectAnswerIndex>
     </Question>
   </Questions>
 </Repository>

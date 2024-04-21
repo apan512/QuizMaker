@@ -1,7 +1,9 @@
-﻿namespace QuizMaker
+﻿using System;
+
+namespace QuizApp
 {
-    internal class Constants
+    public static class Constants
     {
-        public static readonly string[] ChoiceLetters = { "A", "B", "C" };
+        public const string RepositoryFilePath = @"C:\Users\alexp\Desktop\RAKETE MENTORING\QuizMaker\Repository.xml";
     }
 }
