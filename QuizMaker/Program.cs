@@ -38,7 +38,7 @@ namespace QuizApp
 
             // Quiz
             int score = 0;
-            for (int i = 0; i < 3; i++) // Asking 3 questions for demo
+            for (int i = 0; i < 3; i++) 
             {
                 var question = QuizLogic.GetRandomQuestion();
                 UI.ShowMessage($"\nQuestion {i + 1}: {question.QuestionText}");
