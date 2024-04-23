@@ -1,28 +1,11 @@
-﻿using System;
+﻿using QuizMaker;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
 
 namespace QuizApp
 {
-    public class Question
-    {
-        public string QuestionText;
-        public List<string> Answers;
-        public int CorrectAnswerIndex;
-    }
-
-    [Serializable]
-    public class Repository
-    {
-        public List<Question> Questions;
-
-        public Repository()
-        {
-            Questions = new List<Question>();
-        }
-    }
-
     public static class QuizLogic
     {
         public static Repository LoadRepository()
@@ -75,6 +58,58 @@ namespace QuizApp
         {
             return selectedAnswerIndex == question.CorrectAnswerIndex;
         }
+
+        public static void RunQuiz()
+        {
+            var repository = LoadRepository();
+
+            if (repository.Questions.Count == 0)
+            {
+                UI.ShowMessage("No questions available. Please add questions to the repository first.");
+                return;
+            }
+
+            UI.ShowMessage("Quiz is starting!");
+
+            int score = 0;
+            foreach (var question in repository.Questions)
+            {
+                UI.ShowMessage($"\nQuestion: {question.QuestionText}");
+                for (int j = 0; j < question.Answers.Count; j++)
+                {
+                    UI.ShowMessage($"{j + 1}. {question.Answers[j]}");
+                }
+
+               
+                int selectedAnswerIndex;
+                while (true)
+                {
+                    string input = UI.GetUserInput("Enter your answer (1-based):");
+                    if (int.TryParse(input, out selectedAnswerIndex) && selectedAnswerIndex >= 1 && selectedAnswerIndex <= question.Answers.Count)
+                    {
+                        selectedAnswerIndex--; 
+                        break;
+                    }
+                    else
+                    {
+                        UI.ShowMessage("Invalid input. Please enter a valid answer index.");
+                    }
+                }
+
+                if (IsAnswerCorrect(question, selectedAnswerIndex))
+                {
+                    UI.ShowMessage("Correct!");
+                    score++;
+                }
+                else
+                {
+                    UI.ShowMessage("Incorrect!");
+                }
+            }
+
+            UI.ShowMessage($"\nQuiz complete! Your score is {score}/{repository.Questions.Count}");
+        }
+
 
         public static void ClearRepository()
         {

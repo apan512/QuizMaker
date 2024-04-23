@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace QuizApp
+﻿namespace QuizApp
 {
     public static class Constants
     {

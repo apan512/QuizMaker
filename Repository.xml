@@ -2,31 +2,58 @@
 <Repository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Questions>
     <Question>
-      <QuestionText>What is the purpose of meditation?</QuestionText>
+      <QuestionText>What is the number of wheels of a car?</QuestionText>
       <Answers>
-        <string>Fun</string>
-        <string>Chill</string>
-        <string>Enlightenment</string>
-      </Answers>
-      <CorrectAnswerIndex>2</CorrectAnswerIndex>
-    </Question>
-    <Question>
-      <QuestionText>What is the color of sky?</QuestionText>
-      <Answers>
-        <string>Blue</string>
-        <string>Purple</string>
-        <string>Orange</string>
+        <string>4</string>
+        <string>6</string>
+        <string>2</string>
       </Answers>
       <CorrectAnswerIndex>0</CorrectAnswerIndex>
     </Question>
     <Question>
-      <QuestionText>How many days are in a week?</QuestionText>
+      <QuestionText>What is the color of the sky?</QuestionText>
       <Answers>
-        <string>2</string>
-        <string>7</string>
-        <string>3</string>
+        <string>Red</string>
+        <string>Blue</string>
+        <string>Purple</string>
       </Answers>
       <CorrectAnswerIndex>1</CorrectAnswerIndex>
+    </Question>
+    <Question>
+      <QuestionText>What is the number of days in a week?</QuestionText>
+      <Answers>
+        <string>3</string>
+        <string>5</string>
+        <string>7</string>
+      </Answers>
+      <CorrectAnswerIndex>2</CorrectAnswerIndex>
+    </Question>
+    <Question>
+      <QuestionText>What is the purpose of meditation?</QuestionText>
+      <Answers>
+        <string>Enlightenment</string>
+        <string>Chill</string>
+        <string>Fun</string>
+      </Answers>
+      <CorrectAnswerIndex>0</CorrectAnswerIndex>
+    </Question>
+    <Question>
+      <QuestionText>What is the reason of this quiz?</QuestionText>
+      <Answers>
+        <string>Learning</string>
+        <string>Chill</string>
+        <string>Stress</string>
+      </Answers>
+      <CorrectAnswerIndex>0</CorrectAnswerIndex>
+    </Question>
+    <Question>
+      <QuestionText>How many months are in a year?</QuestionText>
+      <Answers>
+        <string>4</string>
+        <string>7</string>
+        <string>12</string>
+      </Answers>
+      <CorrectAnswerIndex>2</CorrectAnswerIndex>
     </Question>
   </Questions>
 </Repository>
