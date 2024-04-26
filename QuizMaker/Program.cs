@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuizMaker;
+using System;
 
 namespace QuizApp
 {
@@ -6,7 +7,12 @@ namespace QuizApp
     {
         static void Main(string[] args)
         {
-            UI.RunQuizApp();
+            Logic logic = new Logic();
+            Console.WriteLine("Welcome to our Quiz Maker!");
+
+            logic.CreatingQuestions();
+            
+
         }
     }
 }
